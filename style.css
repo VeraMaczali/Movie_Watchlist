@@ -213,12 +213,20 @@ a:focus,
 }
 
 @media (max-width: 480px) {
+  .header-top {
+    padding: 4rem 1rem;
+  }
   .search-bar {
+    margin: 0 1rem;
     flex-direction: column;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-left-radius: 0px;
+  }
+  .search-bar div {
+    display: flex;
+    max-width: 90%;
   }
   .search-bar .btn {
     padding: 0.5rem 0;
