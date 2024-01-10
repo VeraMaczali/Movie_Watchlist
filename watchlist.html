@@ -27,18 +27,22 @@
           <a href="index.html">Search for movies</a>
         </div>
       </header>
-      <form class="search-bar px-3">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input
-          type="text"
-          name="navbar-input"
-          id="navbar-input"
-          class="navbar-input"
-        />
+      <form class="search-bar">
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            name="search-bar-input"
+            id="search-bar-input"
+            class="search-bar-input"
+          />
+        </div>
         <button class="btn">Search</button>
       </form>
-      <div id="movie-container" class="flex">
-        <div class="starter">
+
+      <!-- Watchlist -->
+      <div id="movie-container">
+        <div class="starter flex">
           <p class="starter-text light-text">
             Your watchlist is looking a little empty...
           </p>
