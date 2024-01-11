@@ -127,6 +127,7 @@ a:focus,
 .starter {
   color: #2e2e2f;
   text-align: center;
+  min-width: 70vh;
 }
 
 .starter i {
@@ -136,6 +137,11 @@ a:focus,
   font-size: 1.25rem;
   font-weight: 900;
   margin: 1rem 0;
+}
+
+.no-success {
+  color: #a5a5a5;
+  max-width: 300px;
 }
 
 .add {

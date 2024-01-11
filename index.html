@@ -32,8 +32,8 @@
           <i class="fa-solid fa-magnifying-glass"></i>
           <input
             type="text"
-            name="search-bar-input"
-            id="search-bar-input"
+            name="search-term"
+            id="search-term"
             class="search-bar-input"
           />
         </div>
@@ -42,11 +42,17 @@
 
       <!-- Movie display -->
       <div id="movie-container" class="flex">
-        <div class="starter hidden">
+        <div class="starter">
           <i class="fa-solid fa-film"></i>
           <p class="starter-text">Start exploring</p>
         </div>
-        <div class="movie grid">
+        <div class="starter no-success hidden">
+          <p class="starter-text">
+            Unable to find what you're looking for. Please try another search.
+          </p>
+        </div>
+        <div class="movie-list">
+          <!-- <div class="movie grid">
           <img src="./img/placeholder_img.png" class="poster" alt="" />
           <div class="movie-card">
             <div class="movie-top">
@@ -122,6 +128,7 @@
               soluta deleniti, at placeat, nobis recusandae illum.
             </p>
           </div>
+        </div> -->
         </div>
       </div>
     </div>
