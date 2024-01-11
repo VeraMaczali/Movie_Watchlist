@@ -29,7 +29,7 @@ function renderWatchlist() {
                   <p><span class="duration">${movie.Runtime}</span> min</p>
                   <p class="genre">${movie.Genre}</p>
                   <button class="add-remove add remove" data-filmid=${movie.imdbID}>
-                    <img src="./img/add_icon.svg" alt="" /> Remove
+                    <img src="./img/remove_icon.svg" alt="" /> Remove
                   </button>
                 </div>
                 <p class="description">

@@ -2,6 +2,7 @@ const apikey = "423295d6";
 const search = document.querySelector(".search-bar");
 const searchTerm = document.querySelector("#search-term");
 const starter = document.querySelector(".starter");
+const movieContainer = document.querySelector("#movie-container");
 const noSuccess = document.querySelector(".no-success");
 let myWatchlist = JSON.parse(localStorage.getItem("myWatchlist")) || [];
 
@@ -66,8 +67,17 @@ function addToLocalStorage(movieDetails) {
   const addBtns = document.querySelectorAll(".add");
   addBtns.forEach((button) => {
     button.addEventListener("click", (e) => {
-      myWatchlist.push(e.target.dataset.filmid);
-      localStorage.setItem("myWatchlist", JSON.stringify(myWatchlist));
+      if (myWatchlist.indexOf(e.target.dataset.filmid) !== -1) {
+        alert("You already added it");
+      } else {
+        myWatchlist.push(e.target.dataset.filmid);
+        localStorage.setItem("myWatchlist", JSON.stringify(myWatchlist));
+        button.innerHTML = `
+      <button class="add-remove add remove" data-filmid=${movieDetails.imdbID}>
+      <i class="fa-solid fa-check"></i> Added
+      </button>
+      `;
+      }
     });
   });
 }
