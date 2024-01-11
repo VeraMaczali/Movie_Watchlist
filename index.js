@@ -8,7 +8,7 @@ const apikey = "423295d6";
 async function searchMovie(e) {
   e.preventDefault();
   const res = await fetch(
-    `http://omdbapi.com/?apikey=${apikey}&s=${searchTerm.value}&type=movie`
+    `https://omdbapi.com/?apikey=${apikey}&s=${searchTerm.value}&type=movie`
   );
   const data = await res.json();
   let movieArray = data.Search;
@@ -53,7 +53,7 @@ async function searchMovie(e) {
 }
 
 async function getMovieDetails(id) {
-  const res = await fetch(`http://www.omdbapi.com/?apikey=${apikey}&i=${id}`);
+  const res = await fetch(`https://www.omdbapi.com/?apikey=${apikey}&i=${id}`);
   const data = await res.json();
   return data;
 }

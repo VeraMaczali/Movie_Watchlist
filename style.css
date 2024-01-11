@@ -27,7 +27,7 @@ body {
 }
 
 .flex {
-  min-height: 70vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,7 +127,6 @@ a:focus,
 .starter {
   color: #2e2e2f;
   text-align: center;
-  min-width: 70vh;
 }
 
 .starter i {
